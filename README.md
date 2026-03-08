@@ -189,10 +189,8 @@ The circuit consists of:
      └─────OR────┘
            │
            Y
-![8:1 Multiplexer Waveform](imageAssets/8x1MUXTreeCircuit.png)
-
 ```
-
+![8:1 Multiplexer Waveform](imageAssets/8x1MUXTreeCircuit.png)
 ---
 
 # Waveform Diagram
@@ -209,9 +207,8 @@ S2 S1 S0
 I0 I1 I2 I3 I4 I5 I6 I7
 Y
 
-![8:1 Multiplexer Waveform](imageAssets/8x1MUXTreeWaveform.png)
 ```
-
+![8:1 Multiplexer Waveform](imageAssets/8x1MUXTreeWaveform.png)
 ---
 
 # Testbench Output

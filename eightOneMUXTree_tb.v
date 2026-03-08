@@ -5,7 +5,7 @@ module eightOneMUXTree_tb();
     wire Y;
     
     eightOneMUXTree uut(I0,I1,I2,I3,I4,I5,I6,I7,S0,S1,S2,Y);
-    
+    integer k;
     initial begin
         I0=1; I1=0; I2=0; I3=0; I4=0; I5=0; I6=0; I7=0;
         S2=0; S1=0; S0=0; #10;
@@ -38,5 +38,11 @@ module eightOneMUXTree_tb();
         I6=0; I7=1;
         S2=1; S1=1; S0=1; #10;
         $display("S=%b%b%b | Y=%b",S2,S1,S0,Y);
+        
+        {I7,I6,I5,I4,I3,I2,I1,I0} = 8'b10101010;
+        for(k=0;k<8;k=k+1)begin
+            {S2,S1,S0} = k;
+            #10 $display("S=%b%b%b | Y=%b",S2,S1,S0,Y);
+        end
     end
 endmodule
